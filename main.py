@@ -1,10 +1,14 @@
-from task_function import *
-from read import *
+from task_function import find_number, luhn_algorithm, make_statistic
+from read import read_settings
 import argparse
 import logging
+
 logger = logging.getLogger()
 logger.setLevel('INFO')
+
+
 SETTINGS_FILE = "data/settings.json"
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
